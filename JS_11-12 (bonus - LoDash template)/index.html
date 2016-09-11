@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+  <script defer src="js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h2>LoDash Template</h2>
+
+  <script type="text/template" id="myTemplate">
+    <div class="wrapper">
+      
+      <h3 class="profile"><%= fullName %></h3>
+      <p class="profile"><%= profession %></p>
+      <div class="line-block"></div>
+      <h3>Хочу учить фронтенд, потому что:</h3>
+      <ul>
+        <% for (i = 0; i< answers.length; i++) { %>
+          <li><%= answers[i].answer %></li>
+        <% } %>
+      </ul>
+      <div class="line-block"></div>
+      <h3>Мой контактный телефон</h3>
+      <p><%= phoneNumber %></p>
+      <h3>Мой профиль в FB</h3>
+      <p>
+        <a href="<%= fbProfile %>" target="_blank">Facebook.com</a>
+      </p>
+    </div>
+  </script>
+
+</body>
+</html>

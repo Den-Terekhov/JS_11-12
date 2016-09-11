@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/jQuery.carousel.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<!--myCarousel-->
+  <h2>My jQuery carousel plugin</h2>
+  <div class="my_carousel">
+    <div class="carousel-prev">‹</div>
+    <div class="carousel_hider">
+      <ul class="carousel_list">
+        <li class="carousel_element"><img src="img/DSC09252.jpg" alt=""><p>Фото 1</p></li>
+        <li class="carousel_element"><img src="img/DSC09261.jpg" alt=""><p>Фото 2</p></li>
+        <li class="carousel_element"><img src="img/DSC09263.jpg" alt=""><p>Фото 3</p></li>
+        <li class="carousel_element"><img src="img/DSC09270.jpg" alt=""><p>Фото 4</p></li>
+        <li class="carousel_element"><img src="img/DSC09273.jpg" alt=""><p>Фото 5</p></li>
+        <li class="carousel_element"><img src="img/DSC09276.jpg" alt=""><p>Фото 6</p></li>
+      </ul>
+    </div>
+    <div class="carousel-next">›</div>
+  </div>
+
+<!--Template-->
+  <h2>John Resig's Template</h2>
+  <script type="text/html" id="myTemplate">
+    <div class="wrapper">
+      
+      <h3 class="profile"><%= fullName %></h3>
+      <p class="profile"><%= profession %></p>
+      <div class="line-block"></div>
+      <h3>Хочу учить фронтенд, потому что:</h3>
+      <ul>
+        <% for (i = 0; i< answers.length; i++) { %>
+          <li><%= answers[i].answer %></li>
+        <% } %>
+      </ul>
+      <div class="line-block"></div>
+      <h3>Мой контактный телефон</h3>
+      <p><%= phoneNumber %></p>
+      <h3>Мой профиль в FB</h3>
+      <p>
+        <a href="<%= fbProfile %>" target="_blank">Facebook.com</a>
+      </p>
+    </div>
+  </script>
+
+</body>
+</html>
